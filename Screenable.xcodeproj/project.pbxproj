@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F8D2BD12944564A002AA901 /* ScreenableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2BD02944564A002AA901 /* ScreenableApp.swift */; };
+		2F8D2BD12944564A002AA901 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2BD02944564A002AA901 /* AppMain.swift */; };
 		2F8D2BD32944564A002AA901 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D2BD22944564A002AA901 /* ContentView.swift */; };
 		2F8D2BD52944564B002AA901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2BD42944564B002AA901 /* Assets.xcassets */; };
 		2F8D2BD82944564B002AA901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2BD72944564B002AA901 /* Preview Assets.xcassets */; };
+		2F8D2BE12944567E002AA901 /* Backgrounds.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2BDF2944567E002AA901 /* Backgrounds.txt */; };
+		2F8D2BE22944567E002AA901 /* Fonts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2BE02944567E002AA901 /* Fonts.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F8D2BCD2944564A002AA901 /* Screenable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screenable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F8D2BD02944564A002AA901 /* ScreenableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenableApp.swift; sourceTree = "<group>"; };
+		2F8D2BD02944564A002AA901 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		2F8D2BD22944564A002AA901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F8D2BD42944564B002AA901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F8D2BD72944564B002AA901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F8D2BD92944564B002AA901 /* Screenable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Screenable.entitlements; sourceTree = "<group>"; };
+		2F8D2BDF2944567E002AA901 /* Backgrounds.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Backgrounds.txt; sourceTree = "<group>"; };
+		2F8D2BE02944567E002AA901 /* Fonts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fonts.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,12 @@
 		2F8D2BCF2944564A002AA901 /* Screenable */ = {
 			isa = PBXGroup;
 			children = (
-				2F8D2BD02944564A002AA901 /* ScreenableApp.swift */,
+				2F8D2BD02944564A002AA901 /* AppMain.swift */,
 				2F8D2BD22944564A002AA901 /* ContentView.swift */,
 				2F8D2BD42944564B002AA901 /* Assets.xcassets */,
 				2F8D2BD92944564B002AA901 /* Screenable.entitlements */,
+				2F8D2BDF2944567E002AA901 /* Backgrounds.txt */,
+				2F8D2BE02944567E002AA901 /* Fonts.txt */,
 				2F8D2BD62944564B002AA901 /* Preview Content */,
 			);
 			path = Screenable;
@@ -127,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8D2BE12944567E002AA901 /* Backgrounds.txt in Resources */,
+				2F8D2BE22944567E002AA901 /* Fonts.txt in Resources */,
 				2F8D2BD82944564B002AA901 /* Preview Assets.xcassets in Resources */,
 				2F8D2BD52944564B002AA901 /* Assets.xcassets in Resources */,
 			);
@@ -140,7 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F8D2BD32944564A002AA901 /* ContentView.swift in Sources */,
-				2F8D2BD12944564A002AA901 /* ScreenableApp.swift in Sources */,
+				2F8D2BD12944564A002AA901 /* AppMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
