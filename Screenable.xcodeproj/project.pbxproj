@@ -13,6 +13,13 @@
 		2F8D2BD82944564B002AA901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2BD72944564B002AA901 /* Preview Assets.xcassets */; };
 		2F8D2BE12944567E002AA901 /* Backgrounds.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2BDF2944567E002AA901 /* Backgrounds.txt */; };
 		2F8D2BE22944567E002AA901 /* Fonts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F8D2BE02944567E002AA901 /* Fonts.txt */; };
+		2F9C129D294562D9008440EE /* ScreenableDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C129C294562D9008440EE /* ScreenableDocument.swift */; };
+		2F9C12A0294566F9008440EE /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C129F294566F9008440EE /* RenderView.swift */; };
+		2F9C12A22945701B008440EE /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12A12945701B008440EE /* Bundle+Extensions.swift */; };
+		2F9C12A429457781008440EE /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12A329457781008440EE /* Collection+Extensions.swift */; };
+		2F9C12A729457A1B008440EE /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12A629457A1B008440EE /* Color+Extensions.swift */; };
+		2F9C12A929458569008440EE /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12A829458569008440EE /* AppCommands.swift */; };
+		2F9C12AB29458888008440EE /* ShadowLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9C12AA29458888008440EE /* ShadowLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,14 @@
 		2F8D2BD92944564B002AA901 /* Screenable.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Screenable.entitlements; sourceTree = "<group>"; };
 		2F8D2BDF2944567E002AA901 /* Backgrounds.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Backgrounds.txt; sourceTree = "<group>"; };
 		2F8D2BE02944567E002AA901 /* Fonts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fonts.txt; sourceTree = "<group>"; };
+		2F9C129C294562D9008440EE /* ScreenableDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenableDocument.swift; sourceTree = "<group>"; };
+		2F9C129E29456579008440EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2F9C129F294566F9008440EE /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		2F9C12A12945701B008440EE /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		2F9C12A329457781008440EE /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		2F9C12A629457A1B008440EE /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		2F9C12A829458569008440EE /* AppCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommands.swift; sourceTree = "<group>"; };
+		2F9C12AA29458888008440EE /* ShadowLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +72,14 @@
 			isa = PBXGroup;
 			children = (
 				2F8D2BD02944564A002AA901 /* AppMain.swift */,
+				2F9C12A829458569008440EE /* AppCommands.swift */,
 				2F8D2BD22944564A002AA901 /* ContentView.swift */,
+				2F9C12AA29458888008440EE /* ShadowLocation.swift */,
+				2F9C129F294566F9008440EE /* RenderView.swift */,
+				2F9C129C294562D9008440EE /* ScreenableDocument.swift */,
+				2F9C12A5294579E2008440EE /* Extensions */,
 				2F8D2BD42944564B002AA901 /* Assets.xcassets */,
+				2F9C129E29456579008440EE /* Info.plist */,
 				2F8D2BD92944564B002AA901 /* Screenable.entitlements */,
 				2F8D2BDF2944567E002AA901 /* Backgrounds.txt */,
 				2F8D2BE02944567E002AA901 /* Fonts.txt */,
@@ -73,6 +94,16 @@
 				2F8D2BD72944564B002AA901 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F9C12A5294579E2008440EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F9C12A12945701B008440EE /* Bundle+Extensions.swift */,
+				2F9C12A629457A1B008440EE /* Color+Extensions.swift */,
+				2F9C12A329457781008440EE /* Collection+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9C129D294562D9008440EE /* ScreenableDocument.swift in Sources */,
+				2F9C12A22945701B008440EE /* Bundle+Extensions.swift in Sources */,
+				2F9C12AB29458888008440EE /* ShadowLocation.swift in Sources */,
 				2F8D2BD32944564A002AA901 /* ContentView.swift in Sources */,
+				2F9C12A0294566F9008440EE /* RenderView.swift in Sources */,
+				2F9C12A729457A1B008440EE /* Color+Extensions.swift in Sources */,
 				2F8D2BD12944564A002AA901 /* AppMain.swift in Sources */,
+				2F9C12A429457781008440EE /* Collection+Extensions.swift in Sources */,
+				2F9C12A929458569008440EE /* AppCommands.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +320,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Screenable/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +348,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Screenable/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
